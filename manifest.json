@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Github Emjois",
+  "web_accessible_resources": [
+      "emojis.json"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*/pull/*"],
+      "css": ["style.css"],
+      "js": ["bower_components/jquery/dist/jquery.min.js",
+             "bower_components/underscore/underscore-min.js",
+             "script.js"]
+    }
+  ]
+}
