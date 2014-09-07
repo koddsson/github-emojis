@@ -38,7 +38,8 @@ $(document).ready(function() {
             },
             search:    function (term, callback) {
                 findEmoji(term, callback);
-            }
+            },
+            maxCount: 5
         }
     ]);
 });
