@@ -1,17 +1,33 @@
 {
-  "manifest_version": 2,
-  "version": "0.1",
-  "name": "Github Emjois",
-  "web_accessible_resources": [
-      "emojis.json"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["*://github.com/*/pull/*"],
-      "css": ["style.css"],
-      "js": ["bower_components/jquery/dist/jquery.min.js",
-             "bower_components/underscore/underscore-min.js",
-             "script.js"]
-    }
-  ]
+    "manifest_version": 2,
+    "version": "0.1",
+    "name": "Github Emjois",
+    "web_accessible_resources": [
+        "emojis.json",
+        "bower_components/jquery-textcomplete/media/fonts/*",
+        "bower_components/jquery-textcomplete/media/images/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://github.com/*/pull/*"],
+            "css": [
+                "bower_components/jquery-textcomplete/jquery.textcomplete.css",
+                "bower_components/jquery-textcomplete/media/stylesheets/bootstrap.css",
+                "bower_components/jquery-textcomplete/media/stylesheets/font-awesome.css",
+                "bower_components/jquery-textcomplete/media/stylesheets/main.css",
+                "bower_components/jquery-textcomplete/media/stylesheets/shCoreDefault.css",
+                "style.css"
+            ],
+            "js": [
+                "bower_components/jquery/dist/jquery.min.js",
+                "bower_components/underscore/underscore-min.js",
+                "bower_components/jquery-textcomplete/jquery.textcomplete.min.js",
+                "bower_components/jquery-textcomplete/media/javascripts/emoji.js",
+                "bower_components/jquery-textcomplete/media/javascripts/shBrushJScript.js",
+                "bower_components/jquery-textcomplete/media/javascripts/shCore.js",
+                "bower_components/jquery-textcomplete/media/javascripts/zepto-1.0.js",
+                "script.js"
+            ]
+        }
+    ]
 }
