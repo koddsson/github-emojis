@@ -9,7 +9,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["*://github.com/*/pull/*"],
+            "matches": ["*://github.com/*"],
             "css": [
                 "bower_components/jquery-textcomplete/jquery.textcomplete.css",
                 "bower_components/jquery-textcomplete/media/stylesheets/bootstrap.css",

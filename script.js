@@ -28,7 +28,7 @@ $(document).ready(function() {
     var searchEmojis = false;
     var searchTerm = '';
 
-    $('textarea#new_comment_field').textcomplete([
+    $('textarea.comment-form-textarea').textcomplete([
         {
             match: /(^|\s)\$(\w*)$/,
             replace: function (value) { return '$1:' + value + ':'; },
