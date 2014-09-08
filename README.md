@@ -10,6 +10,10 @@ Check it out!
 Installation
 ------------
 
+[Install it from the webstore](https://chrome.google.com/webstore/detail/github-emjois/imlkehkfogifndhomephmkbmgpfgeglh).
+
+or
+
 1. Clone this repo.
 2. Load its directory in Google Chrome as a unpacked extension.
 3. Go to any github comment box, type $ and some text to search through the
@@ -20,6 +24,6 @@ Installation
 TODO
 ----
 
-- Pack the extension and release on the web store.
+- ~~Pack the extension and release on the web store.~~
 - Clean up console warnings.
 - Clean up code
