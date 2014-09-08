@@ -24,22 +24,24 @@ var findEmoji = function(text, callback) {
     });
 };
 
-$(document).ready(function() {
-    var searchEmojis = false;
-    var searchTerm = '';
+var strats = [
+    {
+        match: /(^|\s)\$(\w*)$/,
+        replace: function (value) { return '$1:' + value + ':'; },
+        template: function (value) {
+            var imgURL = chrome.extension.getURL("bower_components/jquery-textcomplete/media/images/emoji/" + value + ".png");
+            return '<img src="' + imgURL + '"></img>' + value;
+        },
+        search:    function (term, callback) {
+            findEmoji(term, callback);
+        },
+        maxCount: 5
+    }
+];
 
-    $('textarea.comment-form-textarea').textcomplete([
-        {
-            match: /(^|\s)\$(\w*)$/,
-            replace: function (value) { return '$1:' + value + ':'; },
-            template: function (value) {
-                var imgURL = chrome.extension.getURL("bower_components/jquery-textcomplete/media/images/emoji/" + value + ".png");
-                return '<img src="' + imgURL + '"></img>' + value;
-            },
-            search:    function (term, callback) {
-                findEmoji(term, callback);
-            },
-            maxCount: 5
-        }
-    ]);
+$(document).ready(function() {
+    // Oh god this is bad.
+    setInterval(function() {
+        $('textarea.comment-form-textarea').textcomplete(strats);
+    }, 1000);
 });
