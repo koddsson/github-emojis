@@ -24,6 +24,6 @@ or
 TODO
 ----
 
-- Pack the extension and release on the web store.
+- ~~Pack the extension and release on the web store.~~
 - Clean up console warnings.
 - Clean up code
