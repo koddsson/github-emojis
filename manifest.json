@@ -1,11 +1,14 @@
 {
     "manifest_version": 2,
-    "version": "0.2",
+    "version": "0.3",
     "name": "Github Emjois",
     "web_accessible_resources": [
         "emojis.json",
         "bower_components/jquery-textcomplete/media/fonts/*",
-        "bower_components/jquery-textcomplete/media/images/*"
+        "bower_components/jquery-textcomplete/media/images/*",
+        "bower_components/jquery-textcomplete/jquery.textcomplete.min.map",
+        "bower_components/underscore/underscore-min.map",
+        "bower_components/jquery/dist/jquery.min.map"
     ],
     "content_scripts": [
         {
