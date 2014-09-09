@@ -12,7 +12,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["*://github.com/*"],
+            "matches": ["*://*.github.com/*"],
             "css": [
                 "bower_components/jquery-textcomplete/jquery.textcomplete.css",
                 "bower_components/jquery-textcomplete/media/stylesheets/main.css",
