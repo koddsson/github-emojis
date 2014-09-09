@@ -1,0 +1,25 @@
+2014-09-08  Kristján Oddsson  <koddsson@gmail.com>
+
+	Add in discusting hack to fix #1.
+
+	Crossed out packing and releasing the extension.
+
+	Add Chrome webstore link
+
+2014-09-07  Kristján Oddsson  <koddsson@gmail.com>
+
+	Fix CSS issue
+
+	Apply plugin to all github textboxes.
+
+	Add maxCount to textcomplete
+
+	Added installation instructions and description.
+
+	Add README
+
+	Finish off the extension.
+
+2014-09-06  Kristján Oddsson  <koddsson@gmail.com>
+
+	Initial commit!
