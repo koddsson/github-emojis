@@ -1,4 +1,18 @@
+2014-09-09  Kristján Oddsson  <koddsson@gmail.com>
+
+	Code cleanup!
+
+	Enable on *.github.com. (now includes gists).
+
+	Add *.map files to web_accessable files.
+
+	Add changelog
+
+	Increment version number
+
 2014-09-08  Kristján Oddsson  <koddsson@gmail.com>
+
+	Merge branch 'master' of github.com:koddsson/github-emojis
 
 	Add in discusting hack to fix #1.
 
