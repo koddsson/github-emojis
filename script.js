@@ -5,7 +5,7 @@ if (typeof String.prototype.startsWith != 'function') {
 }
 
 var findEmoji = function(text, callback) {
-    $.getJSON(chrome.extension.getURL('emojis.json'), function(emojis) {
+    $.getJSON(chrome.extension.getURL('github-emojis/emojis.json'), function(emojis) {
         var results = _(emojis)
           .chain()
           .pairs()
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 match: /(^|\s)\$(\w*)$/,
                 replace: function (value) { return '$1:' + value + ':'; },
                 template: function (value) {
-                    var imgURL = chrome.extension.getURL("bower_components/jquery-textcomplete/media/images/emoji/" + value + ".png");
+                    var imgURL = chrome.extension.getURL("github-emojis/bower_components/jquery-textcomplete/media/images/emoji/" + value + ".png");
                     return '<img src="' + imgURL + '"></img>' + value;
                 },
                 search:    function (term, callback) {
@@ -41,6 +41,6 @@ $(document).ready(function() {
                 },
                 maxCount: 5
             }
-        ])
+        ]);
     }, 1000);
 });
