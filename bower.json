@@ -1,0 +1,28 @@
+{
+  "name": "github-emojis",
+  "version": "0.1",
+  "homepage": "https://github.com/koddsson/github-emojis",
+  "authors": [
+    "Kristján Oddsson <koddsson@gmail.com>"
+  ],
+  "description": "Adds @muan's emoji search into github text fields",
+  "main": "script.js",
+  "keywords": [
+    "github",
+    "emojis"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0",
+    "jquery-textcomplete": "~0.2.6"
+  }
+}
