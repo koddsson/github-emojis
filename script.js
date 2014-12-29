@@ -33,8 +33,8 @@ $(document).ready(function() {
                 match: /(^|\s)\$(\w*)$/,
                 replace: function (value) { return '$1:' + value + ':'; },
                 template: function (value) {
-                    var imgURL = chrome.extension.getURL("github-emojis/bower_components/jquery-textcomplete/media/images/emoji/" + value + ".png");
-                    return '<img src="' + imgURL + '"></img>' + value;
+                    var imgURL = 'https://github.global.ssl.fastly.net/images/icons/emoji/' + value + '.png?v5';
+                    return '<img style="height: 20px;" src="' + imgURL + '"></img>' + value;
                 },
                 search:    function (term, callback) {
                     findEmoji(term, callback);

@@ -23,6 +23,6 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "underscore": "~1.7.0",
-    "jquery-textcomplete": "~0.2.6"
+    "jquery-textcomplete": "~0.3.6"
   }
 }
