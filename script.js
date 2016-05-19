@@ -5,13 +5,13 @@ if (typeof String.prototype.startsWith != 'function') {
 }
 
 var findEmoji = function(text, callback) {
-    $.getJSON(chrome.extension.getURL('github-emojis/emojis.json'), function(emojis) {
+    $.getJSON(chrome.extension.getURL('emojis.json'), function(emojis) {
         var results = _(emojis)
           .chain()
           .pairs()
           .filter(function(emoji) {
               // Search the list of descriptions for the given string
-              var in_list = _(emoji[1]).reduce(function (last, desc) {
+              var in_list = _(emoji[1].keywords).reduce(function (last, desc) {
                 return last || desc.startsWith(text);
               }, false);
               if (emoji[0].startsWith(text) || in_list) {
